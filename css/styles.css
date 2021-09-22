@@ -1,4 +1,4 @@
-ul.flex {
+ul {
     min-width: 940px;
     margin: 30px;
     border: 1px solid #000;
@@ -26,7 +26,7 @@ li {
 
 .d {
     background-color: #3cb371;
-    /* font-size: 72px; */
+    font-size: 72px;
 }
 
 .e {
@@ -37,22 +37,27 @@ li {
     background-color: #9370db;
 }
 
-/* **************************** flexbox ***************** */
+/************** flexbox *****************/
+/** flexbox responds to the content and their width first and then it distributes the leftover space **/
 ul.flex {
-    /* Flexbox responds to the content and their width first and then it distributes the left over space. Add extra text to the first li to demonstrate this.*/
     display: flex;
 
-    /* The justify-content property allows us to distributes the leftover space on the main axis (x-axis). Flex-start is the default value.*/
+    /** The justify-content property allows us to distribute leftover space on the main axis (x-axis). Flex-start is default state */
+    /** container flex properties **/
     justify-content: flex-start;
-    /* justify-content: flex-end; */
-    /* justify-content: center; */
-    /* justify-content: space-between; */
-    /* justify-content: space-around; */
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
 
-    /* The align items property allows the distribution of space on the cross axis (y-axis). The tallest items defines the hieght of the whole row and all other items stretch to fit. Therefore the default value is stretch. Add a larger font size to one item to demonstrate this.*/
-    align-items: stretch;
-    /* align-items: flex-start; */
-    /* align-items: flex-end; */
-    /* align-items: center; */
-    /* align-items: baseline; */
+    /* the align-items property allows the distribution of space on the cross axis (y-axis). The tallest item defines the height of the whole row and all other items stretch to fit.
+    default value is stretch 
+    **/ 
+
+    align-items: stretch; /** default state */
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: baseline;
+
 }
